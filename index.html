@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>POKEDEX</h1>
+      <div class="search-container">
+        <label for="search-input">Buscar por nombre:</label>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Ingrese el nombre del Pokémon"
+        />
+        <button id="search-button">Buscar</button>
+      </div>
+      <div id="pokedata"></div>
+    </main>
+
+    <dialog id="modal">
+      <article class="modal-content">
+        <header>
+          <h2 id="modal-title"></h2>
+        </header>
+        <p><strong>Número:</strong> <span id="modal-number"></span></p>
+        <p><strong>Peso:</strong> <span id="modal-weight"></span></p>
+        <p><strong>Altura:</strong> <span id="modal-height"></span></p>
+        <p><strong>Tipo:</strong> <span id="modal-type"></span></p>
+        <p><strong>Debilidades:</strong> <span id="modal-weakness"></span></p>
+        <footer>
+          <button id="modal-close">Cerrar</button>
+        </footer>
+      </article>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
